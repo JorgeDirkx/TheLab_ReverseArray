@@ -1,1 +1,11 @@
 3 possible ways to Reverse an Array:
+1. using Apache commons collection: ArrayUtils.reverse()
+2.for(int i= 0; i<iArray.length;i++){
+              int j = iArray[i];
+              iArray[i]= iArray[iArray.length-i-1];
+              iArray[iArray.length-i-1]=j;
+
+          }
+          System.out.println("reverse int array method nr2:"+ Arrays.toString(iArray));
+
+3. using List from the Collections framework: Collections.reverse()
